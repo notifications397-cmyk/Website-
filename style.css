@@ -111,3 +111,13 @@ footer {
         padding: 20px 10px;
     }
 }
+/* Dark Mode */
+.dark-mode {
+    background: #111111;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #222222;
+    color: white;
+}
