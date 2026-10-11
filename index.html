@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Website-kayga</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🚀 Website-kayga</h1>
+
+        <p class="welcome">
+            Ku soo dhawoow website-kayga cusub!
+        </p>
+
+        <div class="card">
+
+            <h2>Waxbarashadayda 💻</h2>
+
+            <p>
+                Waxaan baranayaa HTML, CSS iyo JavaScript.
+            </p>
+
+            <button onclick="bedelQoraalka()">
+                Igu dhufo
+            </button>
+
+            <p id="qoraal">
+                Riix button-ka si aad u bilowdo!
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>⏰ Saacadda Hadda</h2>
+
+            <div id="saacad">00:00:00</div>
+
+            <p>Waqtiga telefoonkaaga</p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>🎨 Beddel Midabka</h2>
+
+            <p>Riix button-ka si aad u beddesho muuqaalka.</p>
+
+            <button onclick="bedelMidabka()">
+                Beddel Midabka 🌈
+            </button>
+
+        </div>
+
+        <footer>
+            <p>Waxaa sameeyay aniga ❤️</p>
+            <p>© 2026 Website-kayga</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function bedelQoraalka() {
+            document.getElementById("qoraal").innerText =
+                "Hambalyo! 🎉 Waxaad baranaysaa samaynta website-yada!";
+        }
+
+        function cusboonaysiiSaacadda() {
+            const hadda = new Date();
+
+            document.getElementById("saacad").innerText =
+                hadda.toLocaleTimeString();
+        }
+
+        setInterval(cusboonaysiiSaacadda, 1000);
+
+        cusboonaysiiSaacadda();
+
+        function bedelMidabka() {
+            document.body.classList.toggle("midab-cusub");
+        }
+    </script>
+
+</body>
+</html>
