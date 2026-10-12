@@ -1,7 +1,9 @@
+/* Dejinta guud */
 * {
     box-sizing: border-box;
 }
 
+/* Muuqaalka bogga */
 body {
     margin: 0;
     padding: 20px;
@@ -10,26 +12,30 @@ body {
     color: white;
     text-align: center;
     min-height: 100vh;
-    transition: background 0.5s ease;
+    transition: background 0.5s ease, color 0.5s ease;
 }
 
+/* Qaybta dhexe */
 .container {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
 }
 
+/* Cinwaanka weyn */
 h1 {
     color: #00ffcc;
     font-size: 32px;
     margin-top: 30px;
 }
 
+/* Qoraalka soo dhaweynta */
 .welcome {
     font-size: 18px;
     margin-bottom: 30px;
 }
 
+/* Kaararka */
 .card {
     background: rgba(255, 255, 255, 0.08);
     padding: 25px 15px;
@@ -37,16 +43,20 @@ h1 {
     border-radius: 18px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: background 0.4s ease;
 }
 
+/* Cinwaannada kaararka */
 h2 {
     color: #00ffcc;
 }
 
+/* Qoraallada */
 p {
     line-height: 1.6;
 }
 
+/* Badhamada */
 button {
     background: #00ffcc;
     color: #141e30;
@@ -60,11 +70,13 @@ button {
     transition: 0.3s;
 }
 
+/* Marka badhanka la dul istaago */
 button:hover {
     background: white;
     transform: scale(1.05);
 }
 
+/* Saacadda */
 #saacad {
     font-size: 35px;
     font-weight: bold;
@@ -72,6 +84,7 @@ button:hover {
     margin: 20px 0;
 }
 
+/* Qaybta hoose */
 footer {
     margin-top: 35px;
     padding: 15px;
@@ -79,6 +92,7 @@ footer {
     color: #cccccc;
 }
 
+/* MIDABKA CUSUB */
 .midab-cusub {
     background: linear-gradient(135deg, #42275a, #734b6d);
 }
@@ -98,6 +112,44 @@ footer {
     color: #42275a;
 }
 
+/* DARK MODE */
+body.dark-mode {
+    background: #111111;
+    color: #ffffff;
+}
+
+.dark-mode .container {
+    background: transparent;
+    color: #ffffff;
+}
+
+.dark-mode .card {
+    background: #292929;
+    color: #ffffff;
+    border: 1px solid #444444;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode #saacad {
+    color: #00ffcc;
+}
+
+.dark-mode p {
+    color: #eeeeee;
+}
+
+.dark-mode footer {
+    color: #cccccc;
+}
+
+.dark-mode button {
+    background: #00ffcc;
+    color: #111111;
+}
+
+/* Telefoonnada yaryar */
 @media (max-width: 400px) {
     h1 {
         font-size: 27px;
@@ -110,14 +162,9 @@ footer {
     .card {
         padding: 20px 10px;
     }
-}
-/* Dark Mode */
-.dark-mode {
-    background: #111111;
-    color: white;
-}
 
-.dark-mode .container {
-    background: #222222;
-    color: white;
+    button {
+        max-width: 100%;
+        padding: 12px 16px;
+    }
 }
